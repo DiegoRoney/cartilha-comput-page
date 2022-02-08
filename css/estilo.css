@@ -69,7 +69,7 @@ body {
 #banner {    
    
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
@@ -81,7 +81,14 @@ body {
 
 
 }
-
+@media screen and (min-width: 1200px) {
+    .titulo-principal{
+        font-size: 60px;
+        color: #000000;
+    }
+}
+    
+/*
 .titulo {
     width: 400px;
     height: 50px;
@@ -92,7 +99,7 @@ body {
     top: 50%;
     left: 10%;
 }
-
+*/
 
 /*  
     @media screen and (max-width: 767px) {
@@ -275,7 +282,7 @@ body {
 .jumbotron {
 
     margin-top: -40px;
-    ;
+    
 
 }
 
