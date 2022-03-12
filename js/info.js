@@ -1,5 +1,5 @@
 function info() {
-  return confirm('Em breve :)');
+  return confirm('A cartilha ainda está em desenvolvimento assim como esse site :)');
   //code
 }
 

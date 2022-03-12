@@ -90,7 +90,7 @@ body {
 #banner2 {  
     width: 100%;
     height: 100%;
-align-items: center;
+    align-items: center;
     
 }
 #banner2 img {
@@ -307,6 +307,30 @@ align-items: center;
     
 
 }
+.quest{
+    background-color: #1b2a3b;
+    padding: 15px;
+    color: #99B4BF;
+
+    display: block;
+}
+
+.quest-titulo{
+    padding: 15px;
+}
+
+.quest-item{
+    background-color: #374452;
+    padding: 15px;
+    color: #fefeff;    
+}
+
+summary{
+    margin: 5px;
+    border: 1px solid rgba(0, 1, 61, 0.308);
+    padding: 10px;
+}
+
 
 .mais-info {
     background-color: #fca400;
@@ -316,7 +340,7 @@ align-items: center;
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
-    margin-top: -40px;
+    
     justify-content: space-between;
     justify-content: center;
     gap: 15px;
