@@ -333,22 +333,6 @@ summary{
     padding: 10px;
 }
 
-
-.mais-info {
-    background-color: #fca400;
-    width: 100%;
-    height: 50%;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    
-    justify-content: space-between;
-    justify-content: center;
-    gap: 15px;
-
-}
-
 .card-title {
     font-size: .8rem;
     color: white;
@@ -356,12 +340,41 @@ summary{
 
 }
 
-/* as cores dos itens em serviços, 
-são alteradas em style dentro do card*/
 
-
-.mais-info img {
-
-    width: 80%;
-    flex-wrap: wrap;
+/* grid */
+.cards-container {
+    display: grid;
+    grid-template-columns:
+     repeat(auto-fit, minmax(300px, 1fr));
+     background-color: #FCA400;
+     padding: 25px;
 }
+
+.cards-container-card{
+    background-color: #1b2a3b;
+    padding: 10px;
+    color: #99B4BF;
+    display: block;
+    margin: 15px;
+    border-radius: 5px;
+    height: 300px;
+
+}
+.cards-container-card h2{
+    text-align: center;
+}
+.cards-container-card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
+.cards-container-card:hover{
+    border: #00a2ff solid 2px;
+   
+
+}
+
+/* grid */
