@@ -360,13 +360,14 @@ summary{
     height: 300px;
 
 }
-.cards-container-card h2{
+.cards-container-card h4{
     text-align: center;
+    margin-bottom: 20px;
 }
 .cards-container-card img{
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
     width: 50%;
     
 }
