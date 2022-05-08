@@ -351,6 +351,10 @@ summary{
 }
 
 .cards-container-card{
+    display:block;
+    position:relative;
+    
+
     background-color: #1b2a3b;
     padding: 10px;
     color: #99B4BF;
@@ -359,7 +363,28 @@ summary{
     border-radius: 5px;
     height: 300px;
 
+
 }
+
+
+
+.cards-container-card::before, .cards-container-card::after { content:""; display:block; box-sizing:border-box;
+                      position:absolute;z-index:5; pointer-events: none; 
+                      width:0; height:0; opacity:0; border:3px solid rgb(0, 238, 255) }
+
+                      .cards-container-card::before { border-left:none; border-bottom:none; left:0; top:0;
+            transition:width .5s linear 1.5s, height .5s linear 1s, opacity .1s 2s }
+            .cards-container-card::after  { border-top:none; border-right:none; right:0; bottom:0;
+            transition:width .5s linear .5s, height .5s linear, opacity .1s 1s }
+
+            .cards-container-card:hover::before, .cards-container-card:hover::after  { width:100%; height:100%; opacity:1 }
+
+            .cards-container-card:hover::before { transition:width .5s linear, height .5s linear .5s, opacity .1s }
+            .cards-container-card:hover::after  { transition:width .5s linear 1s, height .5s linear 1.5s, opacity .1s 1s }
+
+
+
+
 .cards-container-card h4{
     text-align: center;
     margin-bottom: 20px;
@@ -372,10 +397,18 @@ summary{
     
 }
 
-.cards-container-card:hover{
-    border: #00a2ff solid 2px;
-   
 
-}
+
+
+/* .cards-container-card{
+    background-color: #1b2a3b;
+    padding: 10px;
+    color: #99B4BF;
+    display: block;
+    margin: 15px;
+    border-radius: 5px;
+    height: 300px;
+
+} */
 
 /* grid */
