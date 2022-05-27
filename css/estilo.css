@@ -352,9 +352,7 @@ summary{
 
 .cards-container-card{
     display:block;
-    position:relative;
-    
-
+    position:relative; 
     background-color: #1b2a3b;
     padding: 10px;
     color: #99B4BF;
